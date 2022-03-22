@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dragonhelpertext1.Fragment.NewsFragment">
+
+    <com.example.dragonhelpertext1.CustomControl.AdaptionSizeTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="信息通知"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/customNews_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintHeight_percent="0.83"/>
+
+
+    <TextView
+        android:id="@+id/customNews_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="目前没有新的通知"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
